@@ -426,10 +426,7 @@
   },
   "ui.toast.genesis_miniboss": {
     "sounds": [
-      {
-        "name": "aether_genesis:achievement/achievement_miniboss",
-        "stream": true
-      }
+      "aether_genesis:achievement/achievement_miniboss"
     ]
   }
 }

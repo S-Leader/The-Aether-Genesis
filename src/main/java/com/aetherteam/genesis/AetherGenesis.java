@@ -137,7 +137,7 @@ public class AetherGenesis {
             mod.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
         }
 
-        AetherAdvancementSoundOverrides.ADVANCEMENT_SOUND_OVERRIDES.register("bronze_miniboss", () -> new AdvancementSoundOverride(100, advancement -> advancement.id().equals(locate("labyrinth_eye")) || advancement.id().equals(locate("sentry_guardian")) || advancement.id().equals(locate("slider_host_mimic")), GenesisSoundEvents.UI_TOAST_AETHER_BRONZE_MINIBOSS));
+        AetherAdvancementSoundOverrides.ADVANCEMENT_SOUND_OVERRIDES.register("bronze_miniboss", () -> new AdvancementSoundOverride(10, advancement -> advancement.id().equals(locate("labyrinth_eye")) || advancement.id().equals(locate("sentry_guardian")) || advancement.id().equals(locate("slider_host_mimic")), GenesisSoundEvents.UI_TOAST_AETHER_BRONZE_MINIBOSS));
     }
 
     public void commonSetup(FMLCommonSetupEvent event) {
