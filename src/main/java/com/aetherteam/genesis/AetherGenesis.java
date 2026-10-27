@@ -208,6 +208,7 @@ public class AetherGenesis {
         // Resource Packs
         this.setupClassicPack(event);
         this.setupAltarOverridePack(event);
+        this.setupTooltipLanguagePack(event);
 
         // Data Packs
         this.setupDataOverridePack(event);
@@ -262,6 +263,24 @@ public class AetherGenesis {
                                     new PathPackResources.PathResourcesSupplier(resourcePath),
                                     new Pack.Metadata(metadata.description(), PackCompatibility.COMPATIBLE, FeatureFlagSet.of(), List.of(), true),
                                     new PackSelectionConfig(true, Pack.Position.TOP, false)
+                            )
+                    ));
+        }
+    }
+
+    /**
+     * A built-in resource pack for genesis item tooltips.
+     */
+    private void setupTooltipLanguagePack(AddPackFindersEvent event) {
+        if (event.getPackType() == PackType.CLIENT_RESOURCES) {
+            Path resourcePath = ModList.get().getModFileById(AetherGenesis.MODID).getFile().findResource("packs/tooltips");
+            PackMetadataSection metadata = new PackMetadataSection(Component.translatable("pack.aether_genesis.tooltips.description"), SharedConstants.getCurrentVersion().getPackVersion(PackType.CLIENT_RESOURCES));
+            event.addRepositorySource((source) ->
+                    source.accept(new Pack(
+                                    new PackLocationInfo("builtin/genesis_tooltips", Component.translatable("pack.aether_genesis.tooltips.title"), PackSource.BUILT_IN, Optional.empty()),
+                                    new PathPackResources.PathResourcesSupplier(resourcePath),
+                                    new Pack.Metadata(metadata.description(), PackCompatibility.COMPATIBLE, FeatureFlagSet.of(), List.of(), false),
+                                    new PackSelectionConfig(false, Pack.Position.TOP, false)
                             )
                     ));
         }
