@@ -323,9 +323,11 @@ public class GenesisLanguageData extends AetherLanguageProvider {
         this.addClientConfig("audio", "night_music_tracks", "Adds some nice night tracks to the Aether's music selection. Also disables the default music manager for the Aether, to prevent overlap");
 
         this.addPackTitle("classic", "Genesis of the Void Textures");
+        this.addPackTitle("tooltips", "Aether Genesis Item Tooltips");
 
         this.addPackDescription("mod", "The Aether: Genesis Resources");
         this.addPackDescription("classic", "The classic look from Genesis of the Void");
+        this.addPackDescription("tooltips", "Add item ability tooltips for Aether Genesis Items");
 
         this.addGuiText("host.title", "the Slider Host Mimic");
         this.addGuiText("sentry_guardian.title", "the Sentry Guardian");

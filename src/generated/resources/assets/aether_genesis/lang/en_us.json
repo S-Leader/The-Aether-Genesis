@@ -295,6 +295,8 @@
   "pack.aether_genesis.classic.description": "The classic look from Genesis of the Void",
   "pack.aether_genesis.classic.title": "Genesis of the Void Textures",
   "pack.aether_genesis.mod.description": "The Aether: Genesis Resources",
+  "pack.aether_genesis.tooltips.description": "Add item ability tooltips for Aether Genesis Items",
+  "pack.aether_genesis.tooltips.title": "Aether Genesis Item Tooltips",
   "subtitles.aether_genesis.entity.battle_sentry.death": "Battle Sentry dies",
   "subtitles.aether_genesis.entity.battle_sentry.hurt": "Battle Sentry hurts",
   "subtitles.aether_genesis.entity.battle_sentry.jump": "Battle Sentry squishes",
